@@ -1,0 +1,12 @@
+body { 
+    background: #ffc100;
+    color: brown;
+    font-family: 'Segoe UI';
+}
+
+.my-class {
+    background: brown;
+    color: #ffc100;
+    font-family: 'Segoe UI';
+    display: table;
+}
