@@ -1,5 +1,5 @@
 function greetMe() {
-    alert("Hog Ridaaa!");
+    alert("Hello");
 }
 
 myTrigger.addEventListener('click', greetMe);
