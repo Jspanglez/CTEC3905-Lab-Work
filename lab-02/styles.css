@@ -33,15 +33,25 @@ main {
 }
 
 header {
+    position: relative;
     text-align: center;
     background-color:black;
+    z-index:1
 }
 
 section {
     color: orange;
     background-color:rgb(91, 3, 3);
+    font-size: large;
     width: 100vw;
+    margin-top: -1%;
+    padding-left: 12px
+}
+
+div {
+    background-color: rgb(91, 3, 3);
     text-align: center;
+    color: orange;
 }
 
 header, section {
