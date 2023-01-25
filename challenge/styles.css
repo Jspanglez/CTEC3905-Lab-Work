@@ -1,37 +1,76 @@
 body {
     font-family: 'Segoe UI';
-    background: black;
+    background: rgb(18, 18, 18);
     color: white;
 }
 
+main {
+    overflow: auto;
+}
+
 h1 {
-    font-size: 5em;
+    overflow: auto;
+    font-size: 6em;
     font-weight: 800;
+    margin-top: 10%;
+    margin-left: 5%;
 }
 
 h2 {
     color: darkgray;
     font-weight: 400;
+    margin-left: 5%;
 }
 
-nav {
+p {
+    margin-left: 5%;
+}
+
+/* nav {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     float: right;
     display: block;
     margin-top: -2%;
     width: max-content;
+    background-color: brown;
 }
 
 nav a {
     display: flex;
     justify-content: space-between;
-    flex-direction: row;
+    background-color: orange;
+    padding: 0.25em 0.5em;
     color: white;
     transition: color 0.3s
+} */
+
+nav {
+    display: flex;
+    float: right;
+    margin-top: 0.5%;
+}
+
+nav a {
+    color: white;
+    padding: 0.25em 1em;
+    font-size: 85%;
+    text-decoration: none;
+    transition: color 0.3s;
 }
 
 nav a:hover {
     color: rgb(63, 63, 230);
+}
+
+button {
+    color: white;
+    background-color: #5badf0;
+    padding: 8px 12px;
+    border-radius: 10%;
+    margin-top: -0.5%;
+}
+
+div {
+    float: right;
 }
