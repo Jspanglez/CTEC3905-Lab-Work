@@ -1,0 +1,56 @@
+body {
+    width:fit-content;
+    font-family: 'Segoe UI';
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    font-size: larger;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    transform: translateX(100vw);
+    transition: 0.5s;
+    background-color: teal;
+}
+
+nav a {
+    text-align: center;
+    padding: 1em
+}
+
+nav a:hover {
+    background-color: aqua;
+}
+
+nav.open {
+    transform: translateX(0);
+}
+
+div {
+    background-color: blueviolet;
+    font-size: 30px;
+    text-align-last: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+
+@media screen and (min-width: 500px) {
+
+    #menuToggler {
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 1;
+    }
+  
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+  
+}
