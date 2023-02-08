@@ -51,3 +51,24 @@ function clearList() {
 clear.addEventListener('click', ev => {
   clearList();
 });
+
+function saveToStorage() {
+	const elements = Array.from(todo.querySelectorAll('li'));
+	const data = elements.map(el => {
+		 return {
+       text: el.querySelector('label').textContent,
+			 done: el.querySelector('input').checked
+		 }
+	});
+	localStorage.setItem(todo.id, JSON.stringify(data));
+}
+
+function loadFromStorage() {
+	clearList();
+	const data = JSON.parse(localStorage.getItem(todo.id));
+	for (const item of data) {
+		addItem(item.text, item.done);
+	}
+}
+
+loadFromStorage();
