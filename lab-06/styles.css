@@ -13,12 +13,14 @@ body {
   margin: 0 auto;
 }
 
-header, section {
+header, section, footer {
   background-color: var(--dark);
   color: var(--light);
   overflow: auto;
   padding: 0.5rem;  
 }
+
+
 
 h1 {
   margin: 0;
