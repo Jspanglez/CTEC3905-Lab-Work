@@ -29,5 +29,25 @@ function addItem(text, done) {
 }
 
 add.addEventListener('click', ev => {
-  addItem(text.value);
+  if(text.value) {          //check there is actually data
+    addItem(text.value);   
+    text.value = null;      //clear the input
+    text.focus();           //give it the focus
+  }
+});
+
+text.addEventListener('keydown', ev => {
+  if(ev.key == "Enter") {
+    add.click();
+  }
+});
+
+function clearList() {
+  while(todo.firstChild) {
+    todo.removeChild(todo.firstChild);
+  }
+}
+
+clear.addEventListener('click', ev => {
+  clearList();
 });
